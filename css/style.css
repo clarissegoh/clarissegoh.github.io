@@ -39,15 +39,15 @@ div.intro{
 
 h2{
   font-family: 'Lato', sans-sans-serif;
-  font-weight: lighter;
   text-transform: uppercase;
+  font-weight:300;
   font-size:1em;
   text-align: center;
 }
 
-span.about, span.education{
+span.about, span.education, span.writing, span.visuals{
   font-family: 'Lato', sans-sans-serif;
-  font-weight: lighter;
+  font-weight:200;
   font-size:1em;
 }
 
