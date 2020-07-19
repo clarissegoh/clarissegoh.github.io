@@ -41,13 +41,14 @@
   float: left;
   box-sizing: border-box; }
 
-/* For devices larger than 400px */
+/*I ADDED THIS IN... OK? */
 @media (min-width: 200px) {
   .container {
     width: 75%;
     padding: 0; }
 }
 
+/* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
     width: 85%;

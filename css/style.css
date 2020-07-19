@@ -1,6 +1,7 @@
 /* Table of contents
 -------------------------------------
 - General content
+- Base styles
 - Typography
 - Header & Navigation
 - Images and media
@@ -8,58 +9,80 @@
 - Media Queries
 -----------------------------------*/
 
-/* General content
------------------------------------*/
-.main{padding:5% 0;}
+/* General content */
 .row{padding:2% 0;}
-.info{padding:20% 0;}
-.green{background-color: #7accc8;}
+section {padding:5% 0;}
+
+body{
+  background-color: #305985;
+}
 
 /* Typography
 -----------------------------------*/
+header{
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  font-weight:100;
+  font-size:1em;
+}
+
 body{
-  font-family: 'Work Sans',sans-serif;
+  font-family: 'Raleway';
   font-size: 1.5em;
-  color: black;
+  color: #FBCFCD;
 }
 
 h1{
-  font-family: 'Playfair Display', cursive;
+  font-family: 'Playfair Display';
   font-size: 2em;
   font-weight: bold;
   letter-spacing: 0.15em;
+  color:#FBCFCD;
 }
 
 div.intro{
-  font-family: 'Playfair Display', cursive;
+  font-family: 'Playfair Display';
   font-size: 2em;
   font-weight: bolder;
   text-align: center;
 }
 
 h2{
-  font-family: 'Lato', sans-sans-serif;
+  font-family: 'Raleway';
   text-transform: uppercase;
   font-weight:300;
   font-size:1em;
   text-align: center;
 }
 
-span.about, span.education, span.writing, span.visuals{
-  font-family: 'Lato', sans-sans-serif;
+span.about, span.education, span.writing1, span.visuals {
+  font-family: 'Raleway', sans-sans-serif;
   font-weight:200;
   font-size:1em;
 }
 
+div.socialmedia{
+  padding:2% 0;
+  text-align:center;
+  letter-spacing:0.2em;
+  font-size:2.5em;
+  color:#FBCFCD;
+}
+
 /* Header & Navigation
 -----------------------------------*/
-header.main_nav{
-  padding:2% 0;
-  display: block;
-  background-color: #EEE9E3;
+header{
+  padding:2% 2%;
+  background-color: #305985;
   /* ADD A DOCKING NAVIGATION --*/
 }
 
+.navi.ul.li{
+  list-style-type:none;
+  display:inline;
+  padding:0;
+  margin:0;
+}
 
 /* Images and media
 -----------------------------------*/
