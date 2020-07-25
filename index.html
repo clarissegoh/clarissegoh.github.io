@@ -79,18 +79,69 @@
     </section>
 
 <img src="images/SVG/three.svg" id="three">
+<img src="images/SVG/star.svg" id="star">
+<img src="images/SVG/moon.svg" id="moon">
 
     <section class="visual" id="visual">
       <div class="contentwrapper">
         <h2>visual</h2>
-        <h3><a href="/photography">photography</a></h3>
-        <h3><a href="/film">film</a></h3>
-        <h3><a href="/digital">digital art</a></h3>
-        <!-- <ul class="visualgrid">
-          <li><img src="images/tahoe.jpg" id="tahoe"/></li>
-          <li><img src="images/theatre.png" id="theatre"/></li>
-          <li><img src="images/digital.png"id="digital"/></li>
-        </ul> -->
+
+
+          <ul class="visualgrid">
+
+<!-- PHOTOGRAPHY -->
+            <li><h3><a href="/photography">photography</a></h3></li>
+            <li><img src="images/tahoe.png" id="tahoe"/></li>
+
+<!-- FILM -->
+            <li><h3><a href="/film">film</a></h3></li>
+            <li>
+              <div id="muteYouTubeVideoPlayer"></div>
+
+              <script async="" src="https://www.youtube.com/iframe_api"></script>
+              <script>
+              function onYouTubeIframeAPIReady() {
+                var player;
+                player = new YT.Player('muteYouTubeVideoPlayer', {
+                    videoId: 'cBL3r1TOTaw', // YouTube Video ID
+                    width: 300, // Player width (in px)
+                    height: 173.033, // Player height (in px)
+                    playerVars: {
+                    autoplay: 1, // Auto-play the video on load
+                    controls: 1, // Show pause/play buttons in player
+                    showinfo: 0, // Hide the video title
+                    modestbranding: 1, // Hide the Youtube Logo
+                    loop: 1, // Run the video in a loop
+                    fs: 0, // Hide the full screen button
+                    cc_load_policty: 0, // Hide closed captions
+                    iv_load_policy: 3, // Hide the Video Annotations
+                    autohide: 0 // Hide video controls when playing
+                  },
+
+                  events: {
+                    onReady: function(e) {
+                      e.target.mute();
+                    },
+                    onStateChange: function(e) {
+                      if (e.data === YT.PlayerState.ENDED) {
+                        player.playVideo();
+                      }
+                    }
+                  }
+                });
+              }
+              // Written by @labnol
+              </script></li>
+
+            <li><h3><a href="/digital">digital art</a></h3></li>
+            <li><img src="images/digital.png"id="digital"/></li>
+
+
+      <li><img src="images/SVG/photoarrow.svg" id="photoarrow"/></li>
+      <li><img src="images/SVG/filmarrow.svg" id="filmarrow"/></li>
+      <li><img src="images/SVG/digitalarrow.svg" id="digitalarrow"/></li>
+
+          </ul>
       </div>
     </section>
 

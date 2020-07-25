@@ -82,6 +82,25 @@ a:hover{
   z-index: -1;
 }
 
+#star{
+  position:absolute;
+  top: 170%;
+  right: 25%;
+  width: 80px;
+  height: auto;
+  z-index: -1;
+}
+
+#moon{
+  position:absolute;
+  top: 220%;
+  right: 10%;
+  width: 100px;
+  height: auto;
+  z-index: -1;
+  transform:rotate(50deg);
+}
+
 
 /* Header
 -----------------------*/
@@ -162,8 +181,9 @@ header a {
 
 /* 3. Visual
 --------------------------------- */
+
 .visual{
-  padding: 3% 0;
+  padding: 3% 0 0 0;
 }
 
 .visual h3 a{
@@ -171,46 +191,111 @@ header a {
   text-decoration: underline;
 }
 
-/* .visualgrid{
+.visualgrid{
   display:grid;
   list-style-type: none;
-  max-width:600px;
-  grid-template-rows:2fr 1fr 2fr 1fr;
-  grid-template-columns: 5fr 3fr 2fr 5fr 3fr;
+  /* grid-template-rows: 1fr */
+  /* grid-template-columns:3fr 3fr 3fr; */
   object-fit: cover;
-  width:100%;
+  text-align: center;
 }
 
+/* PHOTOGRAPHY WORD */
 .visualgrid li:nth-child(1){
-  grid-row: 1 / span 2;
-  grid-column: 2 / span 3;
+  grid-row: 1;
+  grid-column: 12;
 }
 
+/* PHOTOGRAPHY */
 .visualgrid li:nth-child(2){
-  grid-row: 2 / span 2;
-  grid-column: 1 / span 3;
+  grid-row: 5 / span 9;
+  grid-column: 5 / span 16;
   z-index:2;
 }
 
+/* FILM WORD */
 .visualgrid li:nth-child(3){
-  grid-row: 2 / span 2;
-  grid-column: 3 / span 3;
-} */
+  grid-row: 11;
+  grid-column: 3;
+}
 
-/* #theatre{
-  width: 200px;
+/* FILM */
+.visualgrid li:nth-child(4){
+  grid-row: 11 / span 9;
+  grid-column: 1 / span 16;
+  z-index:4;
+}
+
+/* DIGITAL WORD */
+.visualgrid li:nth-child(5){
+  grid-row: 11;
+  grid-column: 21;
+}
+
+/* DIGITAL */
+.visualgrid li:nth-child(6){
+  grid-row: 13 / span 9;
+  grid-column: 8 / span 16;
+  z-index:3;
+}
+
+/* ARROWS */
+.visualgrid li:nth-child(7){
+  grid-row: 2 / span 5;
+  grid-column: 12;
+  z-index:5;
+  transform:rotate(10deg);
+}
+
+.visualgrid li:nth-child(8){
+  grid-row: 11 / span 4;
+  grid-column: 4;
+  z-index:5;
+  transform:rotate(-50deg);
+}
+
+.visualgrid li:nth-child(9){
+  grid-row: 12 / span 4;
+  grid-column: 20;
+  z-index:5;
+  transform:rotate(10deg);
+}
+
+#theatre, #tahoe, #digital{
+  width: 300px;
   height: auto;
 }
 
-#tahoe{
-  width: 200px;
-  height: auto;
+#photoarrow{
+  width:auto;
+  height:60px;
 }
 
-#digital{
-  width: 200px;
-  height: auto;
-} */
+#filmarrow{
+  width:auto;
+  height:65px;
+}
+
+#digitalarrow{
+  width:50px;
+  height:auto;
+}
+
+@media only screen and (max-width: 999px) {
+  .visualgrid{
+    display:block;
+    list-style-type:none;
+  }
+
+  .visualgrid ul li{
+    display:inline;
+  }
+
+#three,#photoarrow,#filmarrow,#digitalarrow{
+    display:none;
+  }
+}
+
 
 /* Footer */
 footer{
